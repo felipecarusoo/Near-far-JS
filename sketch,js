@@ -15,11 +15,11 @@ function draw() {
   y = y + random(-5,5);
   x = constrain(x,0,400);
   y = constrain(y,0,400);
-  let distancia;
-  distancia = dist(mouseX, mouseY, x, y);
-  circle(mouseX, mouseY, distancia);
+  let distance;
+  distance = dist(mouseX, mouseY, x, y);
+  circle(mouseX, mouseY, distance);
 
-  if (mouseIsPressed && distancia < 3) {
+  if (mouseIsPressed && distance < 3) {
     text("Encontrei!", 200, 200);
     noLoop();
   }
