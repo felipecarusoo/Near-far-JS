@@ -2,24 +2,12 @@
 <html>
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-        canvas {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <title>Jogo de Coordenadas</title>
 </head>
 <body>
-    <canvas></canvas>
-    <div id="coords-info" style="position: fixed; bottom: 10px; left: 10px; background: rgba(255,255,255,0.7); padding: 5px; font-family: Arial;">
-        Alvo: <span id="target-coords">0, 0</span> | 
-        Mouse: <span id="mouse-coords">0, 0</span> | 
-        Distância: <span id="distance">0</span>
-    </div>
+    <div id="canvas-container"></div>
+    <div id="coords-info"></div>
     <script src="sketch.js"></script>
 </body>
 </html>
