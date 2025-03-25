@@ -19,7 +19,7 @@ function draw() {
   distance = dist(mouseX, mouseY, x, y);
   circle(mouseX, mouseY, distance);
 
-  if (mouseIsPressed && distance < 3) {
+  if (distance < 3) {
     text("Encontrei!", 200, 200);
     noLoop();
   }
